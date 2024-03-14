@@ -1,4 +1,4 @@
-package lab3.animal;
+package lab3.test;
 
 public class TestPolymorphism {
 }

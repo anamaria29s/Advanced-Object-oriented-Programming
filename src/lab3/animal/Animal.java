@@ -28,5 +28,18 @@ public class Animal {
     public Animal() {
     }
 
-    public void move()
+    public void move(){
+        System.out.println("I can move!");
+    }
+
+    public void eat(){
+        System.out.println("I need something to eat!");
+    }
+
+    //supraincarcare metoda (overloading)
+    public void eat(String whatIEat){
+        System.out.println("I eat" + whatIEat);
+    }
+
+
 }
