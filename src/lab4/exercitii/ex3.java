@@ -12,7 +12,7 @@ public class ex3 {
             int index = ch - 'a';
             viz[index]++;
         }    
-        for(int i = 0; i <= 26; i++) {
+        for(int i = 0; i < 26; i++) {
 
             if (viz[i] > 0){
                 char lit = (char) (i + 'a');
