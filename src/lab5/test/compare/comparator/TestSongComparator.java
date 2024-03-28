@@ -4,7 +4,7 @@ package lab5.test.compare.comparator;
 import lab5.compare.comparator.Song;
 import lab5.compare.comparator.SongNameComparator;
 import lab5.compare.comparator.SongRatingComparator;
-
+import lab5.compare.comparator.SongYearComparator;
 import java.util.Arrays;
 
 public class TestSongComparator {
@@ -27,6 +27,12 @@ public class TestSongComparator {
         Arrays.sort(songs, nameComparator);
         for (Song song : songs) {
             System.out.println("\t" + song.getName());
+        }
+        System.out.println("SORTED BY YEAR: ");
+        SongYearComparator yearComparator = new SongYearComparator();
+        Arrays.sort(songs, yearComparator);
+        for (Song song : songs) {
+            System.out.println("\t" + song.getName() + "-" + song.getYear());
         }
     }
 }
